@@ -4,52 +4,73 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>SIMPLY CHOCOLATE</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,300;0,400;0,500;0,600;0,700;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
+    />
+    <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
     <header>
-      <nav>
-        <a href="./index.html"> <i>Simply</i> chocolate</a>
-        <ul>
-          <li>
-            <a href="./index.html">Home</a>
-          </li>
-          <li>
-            <a href="#how-it’s-made?">How it's made?</a>
-          </li>
-          <li>
-            <a href="#Chocolate-is-loved">Chocolate is loved</a>
-          </li>
-        </ul>
-      </nav>
+        <nav>
+          <a class="logo-header link" href="./index.html">
+            <i>Simply</i> chocolate</a
+          >
+          <ul>
+            <li>
+              <a class="menu-header link" href="./index.html">Home</a>
+            </li>
+            <li>
+              <a class="menu-header link" href="#how-it’s-made?"
+                >How it's made?</a
+              >
+            </li>
+            <li>
+              <a class="menu-header link" href="#Chocolate-is-loved"
+                >Chocolate is loved</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </div>
     </header>
     <main>
       <!--головна з кнопками -->
       <section>
-        <img src="./imeges/chocolate.section1.jpg" alt="chocolate" />
-        <h1>
-          Treat yourself or a loved one to our finest ingredients for a moment
-          of pure delight!
-        </h1>
-        <button type="button">Buy now</button>
-        <a href="#how-it’s-made?">How it’s made</a>
-        <a href="#Benefits">scroll down</a>
+        <div class="main-sec">
+          <img src="./imeges/chocolate.section1.jpg" alt="chocolate" />
+          <h1 class="main-title">
+            Treat yourself or a loved one to our finest ingredients for a moment
+            of pure delight!
+          </h1>
+          <button class="btn-sec-title" type="button">Buy now</button>
+          <a class="lnk-sec-title link" href="#how-it’s-made?">How it’s made</a>
+          <a class="lnk-title-scroll link" href="#Benefits">scroll down</a>
+        </div>
       </section>
       <!--список переваг -->
       <section>
-        <h2 id="Benefits">Benefits</h2>
+        <div class="sec-benefits">
+        <h2 class="benefits-main-title" id="Benefits">Benefits</h2>
         <ul>
-          <li>
-            <h3>Unsurpassed taste</h3>
-            <p>
+          <li class="list">
+            <h3 class="benef-title">Unsurpassed taste</h3>
+            <p class="par-benefits">
               Crafted with the finest quality cocoa beans and a dedication to
               perfection, each bite is a decadent experience that simply cannot
               be matched. Savor the richness and complexity of our Unsurpassed
               Taste and discover a new level of chocolate bliss.
             </p>
           </li>
-          <li>
-            <h3>Affordable price</h3>
-            <p>
+          <li class="list">
+            <h3 class="benef-title">Affordable price</h3>
+            <p class="par-benefits">
               Indulge in high-quality chocolate without breaking the bank with
               Simply Chocolate's selection of affordable treats. Enjoy
               mouth-watering truffles and velvety chocolate bars without
@@ -57,9 +78,9 @@
               affordable luxury today.
             </p>
           </li>
-          <li>
-            <h3>Own production</h3>
-            <p>
+          <li class="list">
+            <h3 class="benef-title">Own production</h3>
+            <p class="par-benefits">
               We take pride in our own production process, ensuring that every
               step is carefully crafted to perfection. From selecting the finest
               ingredients to handcrafting each piece, our attention to detail is
@@ -67,6 +88,7 @@
             </p>
           </li>
         </ul>
+        </div>
       </section>
       <!--інгрідієнти -->
       <section>
