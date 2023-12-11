@@ -17,110 +17,205 @@
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
-    <header>
-        <nav>
+    <!-----------------------------header--------------------------------->
+    <header class="header">
+      <div class="container div-header">
+        <nav class="header-nav">
           <a class="logo-header link" href="./index.html">
-            <i>Simply</i> chocolate</a
-          >
-          <ul>
-            <li>
-              <a class="menu-header link" href="./index.html">Home</a>
+            <i>Simply</i>&nbsp;chocolate
+            <svg
+              class="logo-icon"
+              width="24"
+              height="24"
+              aria-label="simply chocolate logo"
+            >
+              <use href="./imeges/icons.svg.svg#icon-chocolate-logo"></use>
+            </svg>
+          </a>
+
+          <ul class="header-menu-list list">
+            <li class="header-menu-list-item">
+              <a class="menu-header-link link" href="./index.html">Home</a>
             </li>
-            <li>
-              <a class="menu-header link" href="#how-it’s-made?"
+            <li class="header-menu-list-item">
+              <a class="menu-header-link link" href="#how-it’s-made?"
                 >How it's made?</a
               >
             </li>
-            <li>
-              <a class="menu-header link" href="#Chocolate-is-loved"
+            <li class="header-menu-list-item">
+              <a class="menu-header-link link" href="#Chocolate-is-loved"
                 >Chocolate is loved</a
               >
             </li>
           </ul>
         </nav>
+        <button class="mobile-menu-btn" type="button">
+          <svg class="mobile-menu-icon" width="28" height="28" aria-label="mobile menu open button">
+            <use href="./imeges/icons.svg.svg#icon-burger"></use>
+          </svg>
+        </button>
+        <ul class="list-icons list">
+          <li class="icons-list-item">
+            <a href="" class="icons-list-link">
+              <svg
+                class="head-icon"
+                width="24"
+                height="24"
+                aria-label="instagram icon"
+              >
+                <use href="./imeges/icons.svg.svg#icon-instagram"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="icons-list-item">
+            <a href="" class="icons-list-link">
+              <svg
+                class="head-icon"
+                width="24"
+                height="24"
+                aria-label="twitter icon"
+              >
+                <use href="./imeges/icons.svg.svg#icon-twitter"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
       </div>
     </header>
     <main>
-      <!--головна з кнопками -->
+      <!-----------------------------main--------------------------------->
       <section>
         <div class="main-sec">
-          <img src="./imeges/chocolate.section1.jpg" alt="chocolate" />
           <h1 class="main-title">
             Treat yourself or a loved one to our finest ingredients for a moment
             of pure delight!
           </h1>
-          <button class="btn-sec-title" type="button">Buy now</button>
-          <a class="lnk-sec-title link" href="#how-it’s-made?">How it’s made</a>
-          <a class="lnk-title-scroll link" href="#Benefits">scroll down</a>
+          <div>
+            <button class="btn-sec-title" type="button">Buy now</button>
+            <a class="lnk-sec-title link" href="#how-it-made?">How it’s made</a>
+            <a class="lnk-title-scroll link" href="#benefits"
+              >scroll down
+              <div class="scroll-down-icon-wrapper">
+                <svg
+                  class="scroll-down-icon"
+                  width="22"
+                  height="22"
+                  aria-label="scroll down icon"
+                >
+                  <use href="./imeges/icons.svg.svg#icon-scroll"></use>
+                </svg>
+              </div>
+            </a>
+          </div>
         </div>
       </section>
-      <!--список переваг -->
+     <!-----------------------------banefits--------------------------------->
+      <!--
       <section>
         <div class="sec-benefits">
-        <h2 class="benefits-main-title" id="Benefits">Benefits</h2>
-        <ul>
-          <li class="list">
-            <h3 class="benef-title">Unsurpassed taste</h3>
-            <p class="par-benefits">
-              Crafted with the finest quality cocoa beans and a dedication to
-              perfection, each bite is a decadent experience that simply cannot
-              be matched. Savor the richness and complexity of our Unsurpassed
-              Taste and discover a new level of chocolate bliss.
-            </p>
-          </li>
-          <li class="list">
-            <h3 class="benef-title">Affordable price</h3>
-            <p class="par-benefits">
-              Indulge in high-quality chocolate without breaking the bank with
-              Simply Chocolate's selection of affordable treats. Enjoy
-              mouth-watering truffles and velvety chocolate bars without
-              sacrificing taste or quality. Browse our selection and indulge in
-              affordable luxury today.
-            </p>
-          </li>
-          <li class="list">
-            <h3 class="benef-title">Own production</h3>
-            <p class="par-benefits">
-              We take pride in our own production process, ensuring that every
-              step is carefully crafted to perfection. From selecting the finest
-              ingredients to handcrafting each piece, our attention to detail is
-              evident in every bite.
-            </p>
-          </li>
-        </ul>
+          <h2 class="visually-hidden" id="benefits">Benefits</h2>
+          <ul>
+            <li class="list">
+              <div class="benefits-list-icon-wrapper">
+                <svg
+                  class="benefits-list-icon"
+                  width="32"
+                  height="32"
+                  aria-label="chocolate icon"
+                >
+                  <use href="./imeges/icons.svg.svg#icon-chocolate-bar"></use>
+                </svg>
+              </div>
+              <h3 class="benef-title">Unsurpassed taste</h3>
+              <p class="par-benefits">
+                Crafted with the finest quality cocoa beans and a dedication to
+                perfection, each bite is a decadent experience that simply
+                cannot be matched. Savor the richness and complexity of our
+                Unsurpassed Taste and discover a new level of chocolate bliss.
+              </p>
+            </li>
+            <li class="list">
+              <div class="benefits-list-icon-wrapper">
+                <svg
+                  class="benefits-list-icon"
+                  width="32"
+                  height="32"
+                  aria-label="chocolate icon"
+                >
+                  <use href="./imeges/icons.svg.svg#icon-coin"></use>
+                </svg>
+              </div>
+              <h3 class="benef-title">Affordable price</h3>
+              <p class="par-benefits">
+                Indulge in high-quality chocolate without breaking the bank with
+                Simply Chocolate's selection of affordable treats. Enjoy
+                mouth-watering truffles and velvety chocolate bars without
+                sacrificing taste or quality. Browse our selection and indulge
+                in affordable luxury today.
+              </p>
+            </li>
+            <li class="list">
+              <div class="benefits-list-icon-wrapper">
+                <svg
+                  class="benefits-list-icon"
+                  width="32"
+                  height="32"
+                  aria-label="chocolate icon"
+                >
+                  <use href="./imeges/icons.svg.svg#icon-spoon"></use>
+                </svg>
+              </div>
+              <h3 class="benef-title">Own production</h3>
+              <p class="par-benefits">
+                We take pride in our own production process, ensuring that every
+                step is carefully crafted to perfection. From selecting the
+                finest ingredients to handcrafting each piece, our attention to
+                detail is evident in every bite.
+              </p>
+            </li>
+          </ul>
         </div>
       </section>
-      <!--інгрідієнти -->
+      -->
+      <!-----------------------------ingredients--------------------------------->
+      <!--
       <section>
-        <h2>It all adds app to one exceptional taste sensation</h2>
-        <p>
-          At Simply Chocolate, we believe that the secret to exceptional
-          chocolate is in the details. From the sourcing of the finest
-          ingredients to the careful crafting of each individual piece, every
-          step of our process adds up to one exceptional taste sensation.
-        </p>
-        <ul>
-          <li>
-            <img src="./imeges/1.sektion3.png" alt="milk chocolate" />
-            <p>milk chocolate</p>
-          </li>
-          <li>
-            <img src="./imeges/2.sektion3.png" alt="milk" />
-            <p>milk</p>
-          </li>
-          <li>
-            <img src="./imeges/3.sektion3.png" alt="nuts" />
-            <p>nuts</p>
-          </li>
-          <li>
-            <img src="./imeges/4.sektion3.png" alt="semi - sweet chocolate" />
-            <p>semi - sweet chocolate</p>
-          </li>
-        </ul>
+        <div>
+          <h2 class="section-title ingredients-section-title">
+            It all adds up to one exceptional
+            <span class="accent-color">taste</span> sensation
+          </h2>
+          <p>
+            At Simply Chocolate, we believe that the secret to exceptional
+            chocolate is in the details. From the sourcing of the finest
+            ingredients to the careful crafting of each individual piece, every
+            step of our process adds up to one exceptional taste sensation.
+          </p>
+          <ul>
+            <li>
+              <img src="./imeges/1.sektion3.png" alt="milk chocolate" />
+              <p>milk chocolate</p>
+            </li>
+            <li>
+              <img src="./imeges/2.sektion3.png" alt="milk" />
+              <p>milk</p>
+            </li>
+            <li>
+              <img src="./imeges/3.sektion3.png" alt="nuts" />
+              <p>nuts</p>
+            </li>
+            <li>
+              <img src="./imeges/4.sektion3.png" alt="semi - sweet chocolate" />
+              <p>semi - sweet chocolate</p>
+            </li>
+          </ul>
+        </div>
       </section>
-      <!--як це робити. інструкція -->
+      -->
+      <!-----------------------------how its made--------------------------------->
+      <!--
       <section>
-        <h2 id="how-it’s-made?">how it’s made?</h2>
+        <h2 id="how-it-made?">how it’s made?</h2>
         <img src="./imeges/how.its.made.jpg" alt="chocolate" />
         <h3>
           Try our chocolates today and discover the perfect balance of flavor
@@ -155,7 +250,9 @@
           </li>
         </ul>
       </section>
-      <!--відгуки -->
+      -->
+      <!-----------------------------review--------------------------------->
+      <!--
       <section>
         <h2 id="Chocolate-is-loved">chocolate is loved</h2>
         <ul>
@@ -189,6 +286,9 @@
         <button type="button">Leave a review</button>
       </section>
     </main>
+    -->
+    <!-----------------------------footer--------------------------------->
+    <!--
     <footer>
       <h2>Contact us</h2>
       <address>
@@ -212,5 +312,9 @@
       <a href="">Enter your email</a>
       <button type="submit">Subscribe</button>
     </footer>
+    -->
+    <!-----------------------------overlay--------------------------------->
+
+    <!-----------------------------backdrop--------------------------------->
   </body>
 </html>
