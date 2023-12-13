@@ -153,9 +153,9 @@ body {
 }
 
 /*---------------------------- desctop header-------------------------------*/
-@media screen and (min-width: 1158px){
+@media screen and (min-width: 1200px){
 .container{
-    max-width: 1158px;
+    max-width: 1200px;
 }
 .header-nav{
     width: 980px;
@@ -189,6 +189,9 @@ body {
                 url("../imeges/mob-made-choco@2x.jpg");
         }
 
+}
+.main-sec{
+    padding-bottom: 60px;
 }
 .main-title{
     color: #FFF;
@@ -306,10 +309,10 @@ screen and (min-devise-pixel-ratio: 2) {
 }
 }
 /*---------------------------------DESCTOP MAIN-------------------------------*/
-@media screen and (min-width: 1158px){
+@media screen and (min-width: 1200px){
 .main-div-sec {
         background-image: url("../imeges/desc-choco-main\ 1.jpg");
-        max-width: 1136px;
+        min-width: 1136px;
         height: 600px;
         padding: 40px;
     }
@@ -327,37 +330,78 @@ screen and (min-devise-pixel-ratio: 2) {
 
 /*---------------------------------BENEFITS-------------------------------*/
 .sec-benefits{
-    display: flex;
-    flex-direction: row;
-        width: 1200px;
-        height: 344px;
-        padding: 50px;
-        justify-content: center;
-        align-items: center;
-        flex-shrink: 0;
-        background: #1E1823;
+    background-color: #1E1823;
+    padding: 20px 20px 30px 20px;
 }
-.benefits-main-title{
-    background:#1E1823;
+.benefits-list{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.benefits-list-icon-wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 62px;
+    height: 62px;
+    border-radius: 365px;
+    border: 1px solid rgba(255, 255, 255, 0.50);
+    margin-bottom: 22px;
 }
 .benef-title{
     color: #FFF;
-    font-family: Montserrat, sans-serif;
     font-size: 18px;
     font-weight: 600;
-    line-height: normal;
+    margin-bottom: 18px;
 }
 .par-benefits{
     color: rgba(255, 255, 255, 0.70);
-    letter-spacing: 0.02em;
+    letter-spacing: -0.02em;
+    line-height: normal;
 }
 
-
 /*-------------------------------TABLET BENEFITS-------------------------------*/
-
-
+@media screen and (min-width: 768px){
+.sec-benefits{
+    padding: 50px 60px 85px 32px;
+}
+.benefits-list-item{
+    width: 308px;
+}
+.benefits-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 50px 60px;
+}
+}
 
 /*-------------------------------DESCTOP BENEFITS-------------------------------*/
+@media screen and (min-width: 1200px){
+.sec-benefits {
+        padding: 50px;
+        min-height: 344px;
+    }
+.benefits-list-icon-wrapper{
+    margin-bottom: 0;
+}
+.line{
+    padding: 22px 18px 0 0;
+    width: 326px;
+}
+.line{
+    border-right: 1px solid rgba(255, 255, 255, 0.50);
+    height: 125px;
+}
+.non-line{
+    border: none;
+    padding-left: 0;
+}
+.benefits-list{
+    gap: 0;
+    justify-content: space-between;
+}
+}
 
 
 /*-------------------------------INGREDIENTS---------------------------------*/
