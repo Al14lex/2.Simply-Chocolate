@@ -54,11 +54,11 @@ body {
     overflow: hidden;
 }
 .container {
-    max-width: 320px;
+    max-width: 375px;
     margin-left: auto;
     margin-right: auto;
-    padding-left: 16px;
-    padding-right: 16px;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 /*----------------------------header-------------------------------*/
 .div-header{
@@ -159,69 +159,173 @@ body {
 }
 .header-nav{
     width: 980px;
+    margin-right: 90px;
 }
 
 }
 /*----------------------------------MAIN-------------------------------*/
-.main-sec{
-    background: rgba(17, 17, 17, 0.40);
+.main-div-sec{
+    background-color: rgba(17, 17, 17, 0.40);
+    background-image:linear-gradient(180deg, rgba(17, 17, 17, 0.00) 0%, rgba(17, 17, 17, 0.40) 100%), url("../imeges/mob-choco-main1.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    max-width: 335px;
+    height: 621px;
+    border-radius: 20px;
+    padding: 20px;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: flex-end;
+    gap: 32px;
+}
+
+@media screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx),
+    screen and (min-devise-pixel-ratio: 2){
+        .main-section {
+            background-image: linear-gradient(180deg, rgba(17, 17, 17, 0.00) 0%, rgba(17, 17, 17, 0.40) 100%),
+                url("../imeges/mob-made-choco@2x.jpg");
+        }
 
 }
 .main-title{
     color: #FFF;
-    font-family: Montserrat, sans-serif;
-    font-size: 28px;
-    font-weight: 500;
-    line-height: 1.21;
-    letter-spacing: 0.03em;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 1.20;
+    letter-spacing: 0.02em;
+    width: 299px;
 }
-
-
-
-
-/*--------------------------------TABLET MAIN-------------------------------*/
-
-
-
-
-/*---------------------------------DESCTOP MAIN-------------------------------*/
-
-
-
-
-/*---------------------------------BENEFITS-------------------------------*/
+.main-links{
+    display: flex;
+    gap: 14px;
+}
 .btn-sec-title{
     display: flex;
-    padding: 14px 40px;
-    align-items: flex-start;
-    gap: 14px;
-    color: #FFF;
+    align-items: center;
+    justify-content: center;
     background-color: #FD9222;
-    border: 0;
+    border: none;
     border-radius: 100px;
-    font-weight: 600;
-    line-height: normal;
-}
-.lnk-sec-title{
+    width: 120px;
+    height: 41px;
     color: #FFF;
-    font-weight: 600;
-    line-height: normal;
+    font-weight: 500;
+}
+.lnk-sec-title {
+    color: #FFF;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 0.02em;
     border-radius: 100px;
     border: 1px solid #FFF;
     display: flex;
-    width: 183px;
-    height: 45px;
-    padding: 14px 40px;
-    align-items: flex-start;
-    gap: 14px;
-    flex-shrink: 0;
+    justify-content: center;
+    align-items: center;
+    width: 159px;
+    height: 41px;
 }
 .lnk-title-scroll{
+    display: flex;
+    align-items: center;
+    gap: 8px;
     color: #FFF;
+    line-height: 1.3;
+    letter-spacing: 0.03em;
     font-weight: 500;
-    line-height: 1.28;
+}
+.scroll-down-icon-wrapper {
+    background-color:#FFF;
+    fill: #FD9222;
+    border-radius: 50%;
+    width: 28px;
+    height: 28px;
+    padding: 0;
+    letter-spacing: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/*--------------------------------TABLET MAIN-------------------------------*/
+@media screen and (min-width: 768px){
+.container{
+    padding-left: 32px;
+    padding-right: 32px;
+}
+.main-div-sec{
+    background-image: url("../imeges/tablet-choco-main.jpg");
+    max-width: 704px;
+    height: 890px;
+    padding: 40px;
+}
+@media screen and (min-resolution: 192dpi),
+screen and (min-resolution: 2dppx),
+screen and (min-devise-pixel-ratio: 2) {
+    .main-section {
+        background-image: linear-gradient(180deg, rgba(17, 17, 17, 0.00) 0%, rgba(17, 17, 17, 0.40) 100%),
+            url("../imeges/tablet-choco-main1@2x.jpg");
+    }
+}
+.main-title{
+    width: 484px;
+    font-size: 28px;
+    font-weight: 500;
+    line-height: 1.2;
     letter-spacing: 0.03em;
 }
+.btn-sec-title,
+.lnk-sec-title,
+.lnk-title-scroll,
+.scroll-down-icon-wrapper{
+    transition: background-color 250ms linear, color 250ms linear;
+}
+.btn-sec-title:hover,
+.btn-sec-title:focus{
+    background-color: #FCF1E0;
+    color: #FD9222;
+}
+
+.lnk-sec-title:hover,
+.lnk-sec-title:focus{
+    border-color: #FD9222;
+    color: #FD9222;
+}
+
+.lnk-title-scroll:hover,
+.lnk-title-scroll:focus{
+    color: #FD9222;
+}
+.scroll-down-icon-wrapper:hover,
+.scroll-down-icon-wrapper:focus{
+    background-color:#FD9222;
+    stroke: #FAFAFA;
+    fill: #FAFAFA;
+}
+}
+/*---------------------------------DESCTOP MAIN-------------------------------*/
+@media screen and (min-width: 1158px){
+.main-div-sec {
+        background-image: url("../imeges/desc-choco-main\ 1.jpg");
+        max-width: 1136px;
+        height: 600px;
+        padding: 40px;
+    }
+
+    @media screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx),
+    screen and (min-devise-pixel-ratio: 2) {
+        .main-section {
+            background-image: linear-gradient(180deg, rgba(17, 17, 17, 0.00) 0%, rgba(17, 17, 17, 0.40) 100%),
+                url("../imeges/desc-choco-main\ 1@2x.png");
+        }
+    }
+
+}
+
+/*---------------------------------BENEFITS-------------------------------*/
 .sec-benefits{
     display: flex;
     flex-direction: row;
