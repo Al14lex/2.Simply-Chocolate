@@ -402,12 +402,88 @@ screen and (min-devise-pixel-ratio: 2) {
     justify-content: space-between;
 }
 }
-
-
 /*-------------------------------INGREDIENTS---------------------------------*/
+.div-ingred{
+    padding-top: 60px;
+    padding-bottom: 30px;
+}
+.ingredients-section-title{
+    width: 283px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 1.2;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 24px;
+}
+.par-ingred{
+    text-align: center;
+    letter-spacing: -0.02em;
+    margin-bottom: 32px;
+}
+.ingred-list{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.ingred-list-item > p{
+    font-weight: 600;
+    line-height: 1.3;
+    letter-spacing: -0.02em;
+    text-transform: uppercase;
+}
+.ingred-list-item{
+    padding: 28px;
+    border-radius: 15px;
+}
+.ingred-list-item:nth-child(4n+1){
+    color: #FFF;
+    background-color: #FD9222;
+}
+.ingred-list-item:nth-child(even){
+    background-color: #FFF;
+    color: #111;
+    border: 1px solid #FD9222;
+}
+.ingred-list-item:nth-child(4n-1){
+    background-color: #1E1823;
+    color: #FFF;
+    border-color: #1E1823;
+}
+.ingred-img{
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 25px;
+}
 
 /*-------------------------------TABLET INGREDIENTS-------------------------------*/
+@media screen and (min-width: 768px){
+.div-ingred{
+    padding: 80px 32px 40px 32px;
+}
+.ingredients-section-title{
+    width: 411px;
+}
+.par-ingred{
+    width: 486px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 50px;
+}
+.ingred-list{
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 32px;
+    height: 572px;
+}
+.ingred-list-item{
+    width: 335px;
+}
 
+}
 
 /*-------------------------------DESCTOP INGREDIENTS----------------------------------*/
 
