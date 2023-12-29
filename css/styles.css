@@ -655,12 +655,109 @@ screen and (min-devise-pixel-ratio: 2) {
 }
 }
 /*----------------------------------REVIEWS-------------------------------*/
-
+.div-review{
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+.main-tilte-review{
+    font-size: 20px;
+    text-align: center;
+    font-weight: 600;
+    line-height: 1.2;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    margin-bottom: 74px;
+}
+.list-item-review{
+    position: relative;
+    height: 200px;
+    padding: 56px 18px 42px;
+    margin-bottom: 20px;
+    background-color: #FFF;
+    border-radius: 15px;
+    border: 1px solid rgba(17, 17, 17, 0.10);
+    box-shadow: 0px 9.049px 100px 0px rgba(17, 17, 17, 0.03);
+}
+.photo-review{
+    position: absolute;
+    left: 127px;
+    top: -40px;
+    margin-bottom: 18px;
+}
+.name-reviews{
+    text-align: center;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 1.3; 
+    margin-bottom: 24px;
+}
+.reviews-par{
+    text-align: center;
+    color: rgba(17, 17, 17, 0.70);
+}
+.div-icons-review{
+    display: flex;
+    gap: 13px;
+    justify-content: center;
+    margin-bottom: 32px;
+}
+.icons-review{
+    fill: rgba(17, 17, 17, 0.10);
+}
+.button-review{
+    background-color: transparent;
+    border-radius: 100px;
+    border: 1px solid #FD9222;
+    padding: 12px 28px;
+    font-weight: 600;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+}
+.list-item-review:not(:first-child){
+     display: none;
+}
 /*-------------------------------TABLET REVIEWS-------------------------------*/
-
-
+@media screen and (min-width: 768px){
+.main-tilte-review{
+    margin-bottom: 91px;
+    font-size: 24px;
+}
+.list-review{
+    display: flex;
+    justify-content: space-between;
+}
+.list-item-review{
+    width: calc((100% - 16px)/2);
+    margin-bottom: 31px;
+}
+.button-review{
+    padding: 14px 40px;
+    font-size: 18px;
+    transition: background-color 250ms linear, color 250ms linear;
+}
+.button-review:hover,
+.button-review:focus{
+    background-color: #FD9222;
+    color: #FFF;
+}
+.list-item-review:not(:last-child) {
+    display: block;
+}
+}
 /*-------------------------------DESCTOP REVIEWS-------------------------------*/
-
+@media screen and (min-width: 1200px){
+.list-item-review:not(:first-child){
+    display: block;
+}
+.list-item-review {
+    width: calc((100% - 56px)/3);
+    margin-bottom: 49px;
+}
+.div-icons-review{
+    display: none;
+}
+}
 
 /*-------------------------------FOOTER-------------------------------*/
 
