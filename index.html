@@ -422,35 +422,43 @@
           </svg>
         </button>
         <p class="backdrop-title">leave a review <br> about <span class="accent-color">our chocolate</span></p>
-        <form class="form-backdrop">
-          <label for="users-name">Name</label>
-          <div>
-            <input type="text" name="users-name" id="users-name" pattern="[a-zA-Za-яА-ЯіїІЇєЄґҐ']+" title="Thomas" required>
+        <form>
+          <label class="form-backdrop-label" for="users-name">Name</label>
+          <div class="backdrop-input">
+            <input class="form-input" type="text" name="users-name" id="users-name" pattern="[a-zA-Za-яА-ЯіїІЇєЄґҐ']+" title="Thomas" required>
+              <svg class="form-icons" width="17" height="17" aria-label="form-icons">
+                <use href="./imeges/icons.svg.svg#icon-user"></use>
+              </svg>    
           </div>
-          <label for=""></label>
-          <div>
-            <input type="text" name="" id="">
+          <label class="form-backdrop-label" for="users-mail">Email</label>
+          <div class="backdrop-input">
+            <input class="form-input" type="email" name="users-mail" id="users-mail" required>
+            <svg class="form-icons" width="17" height="17" aria-label="form-icons">
+              <use href="./imeges/icons.svg.svg#icon-mail"></use>
+            </svg>
           </div>
-          <label for=""></label>
-          <div>
-            <input type="text">
+          <label class="form-backdrop-label" for="users-tel">Phone number</label>
+          <div class="backdrop-input">
+            <input class="form-input" type="tel" name="users-tel" id="users-tel" title="xxx-xxx-xx-xx" pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}" required>
+            <svg class="form-icons" width="17" height="17" aria-label="form-icons">
+              <use href="./imeges/icons.svg.svg#icon-phone"></use>
+            </svg>
           </div>
-          <label for=""></label>
+          <label class="form-backdrop-label" for="users-comment">Comment</label>
           <div>
-            <textarea name="" id="" cols="30" rows="10"></textarea>
+            <textarea class="form-comment" name="users-comment" id="users-comment" placeholder="Enter text"></textarea>
           </div>
-            
-          <div>
-              <input type="checkbox" name="" id="">
-              <label for="">
-                <span>
-                  <svg>
-                    <use></use>
+          <div class="form-polisy">
+              <input class="form-checkbox visually-hidden" type="checkbox" name="user-privacy" id="user-privacy" value="true" required>
+              <label class="form-label-privasy" for="user-privasy">
+                <span class="check-mark">
+                  <svg class="icon-check-mark" width="10" height="10" aria-label="form-check-mark">
+                    <use href="./imeges/icons.svg.svg#icon-check-mark"></use>
                   </svg>
                 </span>
-                <span>
+                <span class="texst-polisy">
                   I accept the terms and conditions of the
-                  <a href="">Privacy Policy</a>
+                  <a href="" class="form-link accent-color">Privacy Policy</a>
                 </span>
               </label>
           </div>
