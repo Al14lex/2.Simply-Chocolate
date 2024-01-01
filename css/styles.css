@@ -941,6 +941,11 @@ screen and (min-devise-pixel-ratio: 2) {
     width:24px;
     height: 24px;
     stroke: #111;
+    transition: stroke 250ms linear;
+}
+.close-form-button:hover,
+.close-form-button:focus{
+    stroke:#FD9222;
 }
 .backdrop-title{
      font-size: 20px;
@@ -957,12 +962,12 @@ screen and (min-devise-pixel-ratio: 2) {
 .backdrop-input{
     position: relative;
     margin-bottom:14px;
+    margin-top: 4px;
 }
 .form-input{
     padding-left:43px;
     border-radius: 8px;
     width: 100%;
-    margin-top: 4px;
     background-color: transparent;
     height: 45px;
     outline: 0px solid transparent;
@@ -981,10 +986,12 @@ screen and (min-devise-pixel-ratio: 2) {
 .form-icons{
     position: absolute;
     left: 18px;
-    top:18px;
+    top:14px;
     fill:none;
     stroke:#404040 ;
     transition: stroke 250ms linear;
+    width: 17px;
+    height: 17px;
 }
 .form-comment{
     width: 100%;
@@ -1041,7 +1048,61 @@ screen and (min-devise-pixel-ratio: 2) {
 .form-checkbox:checked+.form-label-privasy .icon-check-mark {
     opacity: 1;
 }
+.form-main-button{
+    background-color: #FD9222;
+    color:#FFF;
+    border-radius: 100px;
+    padding: 12px 28px;
+    width: 93px;
+    font-weight: 600;
+    line-height: normal;
+    border:none;
+    transition: background-color 250ms linear, color 250ms linear;
+}
+.form-main-button:hover,
+.form-main-button:focus{
+    background-color: #FCF1E0;
+    color:#fd9222;
+}
 /*-------------------------------TABLET BACKDROP-------------------------------*/
-
-
-/*--------------------------------DESCTOP BACKDROP-------------------------------*/
+@media screen and (min-width: 768px){
+.div-backdrop{
+   width: 517px;
+   height: 794px;
+    padding: 40px;
+}
+.close-form-button{
+    top:24px;
+    right: 24px;
+}
+.backdrop-title{
+    font-size: 24px;
+    margin-bottom: 40px;
+}
+.backdrop-input{
+    margin-top: 8px;
+    margin-bottom: 18px;
+}
+.form-input{
+    height: 68px;
+    padding-left: 62px;
+    font-size: 16px;
+}
+.form-icons{
+    width: 24px;
+    height: 24px;
+    left:24px;
+    top:22px;
+}
+.form-comment{
+    height: 137px;
+    margin-top: 8px;
+}
+.check-mark{
+    width: 20px;
+}
+.form-main-button{
+    width: 117px;
+    padding: 14px 40px;
+}
+}
